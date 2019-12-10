@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "devroyeregular", Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: #2f2f2f;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "photo name name" "photo address contacts";
+    height: 45rem;
+    background-image: linear-gradient(to top right, rgb(48, 186, 94), rgb(62, 188, 105), rgb(75, 191, 116), rgb(89, 193, 127), rgb(103, 196, 138), rgb(117, 198, 149), rgb(130, 201, 159), rgb(144, 203, 170), rgb(158, 206, 181), rgb(172, 208, 192), rgb(185, 211, 203), rgb(199, 213, 214));}
+
+.name {
+    grid-area: name;
+}
+
+.name h1, .name h2 {
+    text-align: center;
+}
+
+.name h1 {
+    margin: 4rem auto 2rem auto;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.address {
+    grid-area: address;
+    color: white;
+    background: linear-gradient(45deg, #292929 25%, transparent 25%, transparent 75%, #292929 100%), linear-gradient(45deg, #292929 25%, transparent 25%, transparent 75%, #292929 100%) 0.1875em 0.1875em, radial-gradient(at 100% 0, #484847, #090909);
+    background-size: 0.375em 0.375em, 0.375em 0.375em, 100% 100%;
+}
+
+.address h3 {
+    margin: 2rem auto 1rem auto;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.4);
+}
+
+.address p {
+    margin-left: 2rem;
+}
+
+.contacts {
+    grid-area: contacts;
+    border-left: 0.5rem solid white;
+    color: white;
+    background: linear-gradient(45deg, #292929 25%, transparent 25%, transparent 75%, #292929 100%), linear-gradient(45deg, #292929 25%, transparent 25%, transparent 75%, #292929 100%) 0.1875em 0.1875em, radial-gradient(at 100% 0, #484847, #090909);
+    background-size: 0.375em 0.375em, 0.375em 0.375em, 100% 100%;
+}
+
+.contacts h3 {
+    margin: 2rem auto 1rem auto;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.4);
+}
+
+.contacts p {
+    margin-left: 2rem;
+}
+
+.contacts p a {
+    color: white;
+}
+
+.photo {
+    grid-area: photo;
+    background: url(../images/promo_foto.jpg) no-repeat 50% 50%, rgba(17, 17, 17, 0.05);
+    background-size: contain;
+}
+
+
+
+.main_content {
+    padding: 3rem 3rem;
+}
+
+.main_content .block {
+    margin-bottom: 3rem;
+    border-bottom: 1px dashed black;
+}
+
+.main_content .block h2 {
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+}
+
+.main_content .block p {    
+    text-indent: 2rem;
+}
